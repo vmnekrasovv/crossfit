@@ -4,6 +4,7 @@
   --color-light: #FFFFFF;
   --color-dark-gray: #404040;
   --color-light-gray: #C4C4C4;
+  --color-highlight: #CAFF00;
 
   --border-radius: 30px;
   --border: 1px solid var(--color-light);
@@ -63,6 +64,7 @@ a:hover {
 
 p {
   margin-block: 0;
+  color: #fff;
 }
 
 p:not([class]):not(:last-child) {
@@ -129,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 26px;
   aspect-ratio: 1;
   background: url('../images/dest/icons/plus.svg') center/contain no-repeat;
+  display: none;
 }
 
 .backdrop-title::after {
@@ -143,6 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   color: transparent;
   -webkit-text-stroke: 1px var(--color-light-gray);
   text-stroke: 1px var(--color-light-gray);
+  display: none;
 }
 
 .backdrop-title.centered::after {
@@ -164,22 +168,28 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   white-space: nowrap;
   background-color: var(--color-light);
-  border: none;
+  border: 1px solid transparent;
   border-radius: var(--border-radius);
 }
 
 .button:hover {
-  background-color: var(--color-light-gray);
+  background-color: var(--color-highlight);
+  border-color: var(--color-highlight);
+  cursor: pointer;
 }
 
 .button.transparent {
   position: relative;
   height: var(--input-height);
   padding-left: 31px;
-  padding-right: 80px;
+  //padding-right: 80px;
   color: var(--color-light);
   background-color: transparent;
   border: var(--border);
+
+  &:hover {
+    border-color: var(--color-highlight);
+  }
 }
 
 .button.transparent::after {
@@ -191,11 +201,7 @@ h1, h2, h3, h4, h5, h6 {
   background: url('../images/dest/icons/arrow-top-right.svg') center/70% no-repeat;
   border: var(--border);
   border-radius: 50%;
-}
-
-.button.transparent:hover {
-  color: var(--color-dark);
-  background-color: var(--color-light-gray);
+  display: none;
 }
 
 .input {
@@ -218,9 +224,9 @@ select.input:invalid {
 }
 
 .input:focus {
-  color: var(--color-dark);
-  background-color: var(--color-light-gray);
   outline: none;
+  border-color: var(--color-highlight);
+
 }
 
 /* Chrome, Safari, Edge, Opera */
