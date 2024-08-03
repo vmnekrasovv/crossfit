@@ -5,8 +5,15 @@
   --color-dark-gray: #404040;
   --color-light-gray: #C4C4C4;
   --color-highlight: #CAFF00;
+  
   --color-border: #293544;
-  --color-border-light: #557A9F ;
+  --color-border-light: #557A9F;
+  --color-border-dark: #14171c;
+
+  --color-button: #293544;
+  --color-button-border: #14171c;
+  --color-button-hover: #557A9F;
+
 
   --border-radius: 30px;
   --border: 2px solid var(--color-border);
@@ -169,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: var(--color-light);
-  border: 1px solid transparent;
+  background-color: var(--color-button);
+  border: var(--border);
   border-radius: var(--border-radius);
 }
 
@@ -186,8 +193,9 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 31px;
   //padding-right: 80px;
   color: var(--color-light);
-  background-color: transparent;
+  background-color: var(--color-border);
   border: var(--border);
+  border-color: var(--color-border-dark);
 
   &:hover {
     border-color: var(--color-highlight);
