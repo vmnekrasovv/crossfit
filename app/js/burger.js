@@ -1,7 +1,9 @@
 (function($){
 	$(document).ready(function(){
 
-		let btn = $('.header-burger-button, .header-menu');
+		$('.burger').append("<span class='burger__element'></span>");
+
+		let btn = $('.burger, .header-menu');
 
 		btn.click(function(){
 			btn.toggleClass('active');
