@@ -69,6 +69,12 @@
 
 .footer-subscribe {
   position: relative;
+
+  &:hover {
+    .footer-subscribe-button {
+      border-color: var(--color-border-light);
+    }
+  }
 }
 
 .footer-subscribe:not(:last-child) {
@@ -91,15 +97,15 @@
 }
 
 .footer-subscribe-button:hover {
-  background-color: var(--color-light-gray);
+  cursor: pointer;
 }
 
-.footer-soc1als-list {
+.footer-socials-list {
   display: flex;
   column-gap: 18px;
 }
 
-.footer-soc1als-link {
+.footer-socials-link {
   display: flex;
   width: 23px;
 }
