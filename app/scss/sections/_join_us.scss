@@ -28,16 +28,17 @@
   column-gap: 4px;
   width: 200px;
   aspect-ratio: 1;
-  font-size: 14px;
+  font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
-  color: var(--color-light);
-  background-color: transparent;
-  border: var(--border);
-  border-radius: 50%;
+  color: #000;
+  background: rgba(255, 255, 255, .3);
+  border: 3px solid #000;
+  border-radius: 50%;  
 }
 
 .join-us-video-play-button::after {
+  display: none;
   content: '';
   width: 26px;
   aspect-ratio: 1;
@@ -46,8 +47,8 @@
 }
 
 .join-us-video-play-button:hover {
-  color: var(--color-dark);
-  background-color: var(--color-light-gray);
+  background: rgba(255, 255, 255, .5);
+  cursor: pointer;
 }
 
 .join-us-video-play-button:hover::after {
