@@ -1,13 +1,15 @@
 :root {
-  --color-dark: #000000;
-  --color-dark-alternate: #131619;
+  --color-dark: #111;
+  --color-dark-alternate: #151b22;
   --color-light: #FFFFFF;
   --color-dark-gray: #404040;
   --color-light-gray: #C4C4C4;
   --color-highlight: #CAFF00;
+  --color-border: #4C647C;
+  --color-border-light: #557A9F ;
 
   --border-radius: 30px;
-  --border: 1px solid var(--color-light);
+  --border: 2px solid var(--color-border);
 
   --font-family-base: 'Heebo', sans-serif;
   --font-family-accent: 'Yantramanav', sans-serif;
@@ -210,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-inline: 25px;
   color: var(--color-light);
   background-color: transparent;
-  border: 1px solid var(--color-light-gray);
+  border: var(--border);
   border-radius: var(--border-radius);
 }
 
@@ -220,12 +222,12 @@ select.input:invalid {
 }
 
 .input:hover {
-  border-color: var(--color-light);
+  border-color: var(--color-border-light);
 }
 
 .input:focus {
   outline: none;
-  border-color: var(--color-highlight);
+  border-color: var(--color-border-light);
 
 }
 
