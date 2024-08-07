@@ -341,7 +341,7 @@
                 placeholder="Age"
               />
 
-              <label class="visually-hidden" for="gender">Gender</label>
+              <!-- <label class="visually-hidden" for="gender">Gender</label>
               <select class="calculate-input input" id="gender" required>
                 <option value="" disabled selected>Gender</option>
                 <option value="male">Male</option>
@@ -353,7 +353,36 @@
                 <option value="" disabled selected>Select an activity factor</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
-              </select>
+              </select> -->
+
+              <div class="select input" id="select1">
+                <div class="select__backdrop" data-type="backdrop"></div>
+                <div class="select__input" data-type="input">
+                  <span class="select__value" data-type="value">Gender</span>
+                  <i data-type="arrow">></i>
+                </div>
+                <div class="select__dropdown">
+                  <ul class="select__list">
+                    <li class="select__item" data-type="item">Male</li>
+                    <li class="select__item" data-type="item">Female</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="select input" id="select2">
+                <div class="select__backdrop" data-type="backdrop"></div>
+                <div class="select__input" data-type="input">
+                  <span class="select__value" data-type="value">Activity factor</span>
+                  <i data-type="arrow">></i>
+                </div>
+                <div class="select__dropdown">
+                  <ul class="select__list">
+                    <li class="select__item" data-type="item">1</li>
+                    <li class="select__item" data-type="item">2</li>
+                  </ul>
+                </div>
+              </div>
+
             </div>
             <button
               class="calculate-button button transparent"
