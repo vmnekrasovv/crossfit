@@ -150,7 +150,17 @@
   }
 
   .motivation-card-image {
-    max-width: 60%;
+    max-width: 90%;
+    width: 90%;
+  }
+
+  .motivation-card-body {
+    width: 90%;
+    padding-left: 0;
+  }
+
+  .motivation-card-description {
+    padding-left: 0;
   }
 
   .motivation-card-description:not(:last-child) {

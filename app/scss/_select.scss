@@ -3,6 +3,8 @@
 	z-index: 1;
 
 	&.open {
+		z-index: 2;
+		
 		.select__dropdown { display: block; }
 		.select__backdrop { display: block; }
 	}
