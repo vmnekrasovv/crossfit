@@ -96,3 +96,19 @@
     }
   }
 } // family
+
+
+/* media */
+
+@media (max-width: 767px) {
+
+  .family-header {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .family-body {
+    column-gap: 12px;
+  }
+  
+}

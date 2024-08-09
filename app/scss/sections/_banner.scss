@@ -6,6 +6,10 @@
   padding: 36px 70px;
   color: var(--color-light);
   background-color: var(--color-dark-alternate);
+
+  @media (max-width: 767px) {
+    min-height: calc(100vh - (var(--header-height) + 40px) );
+  }
 }
 
 .banner-body {
@@ -66,4 +70,28 @@
 
 .banner-pagination-button:not(.is-current):hover::after {
   border-color: var(--color-light-gray);
+}
+
+/* media */
+
+@media (max-width: 1024px) {
+
+  .banner {
+    padding-inline: 15px;
+  }
+
+  .banner {
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .banner-info {
+    margin-bottom: 5px;
+  }
+
+  .banner-info::before {
+    margin-right: 10px;
+  }
 }

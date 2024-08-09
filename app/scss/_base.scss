@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 .button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   height: 38px;
   padding-inline: 26px;
   font-size: 12px;
@@ -190,8 +191,6 @@ h1, h2, h3, h4, h5, h6 {
 .button.transparent {
   position: relative;
   height: var(--input-height);
-  padding-left: 31px;
-  //padding-right: 80px;
   color: var(--color-light);
   background-color: var(--color-border);
   border: var(--border);

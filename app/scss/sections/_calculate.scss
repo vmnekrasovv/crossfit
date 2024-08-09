@@ -19,7 +19,7 @@
 }
 
 .calculate-description {
-  max-width: 385px;
+  max-width: 800px;
 }
 
 .calculate-description:not(:last-child) {
@@ -114,4 +114,64 @@
 .calculate-table tfoot td {
   padding-top: 33px;
   padding-bottom: 0;
+}
+
+
+/* media */
+
+
+@media (max-width: 1024px) {
+
+  .calculate {
+    padding-block: 100px;
+  }
+
+  .calculate-inner {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  .calculate-body {
+    width: 90%;
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .calculate-button {
+    width: 100%;
+  }
+
+  .calculate-table-wrapper::before {
+    display: none;
+  }
+
+  .calculate-table-wrapper {
+    max-width: 90%;
+  }
+
+  .calculate-table {
+    width: 100%;
+  }
+
+  .calculate-table :is(td, th) {
+    padding-block: 10px;
+  }
+
+  .calculate-table tfoot td {
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .calculate {
+    padding-block: 60px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .calculate-form-body {
+    grid-template-columns: 1fr;
+  }
 }
