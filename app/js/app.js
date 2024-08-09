@@ -63,6 +63,48 @@
 			}, 200);
 		});
 
-		// ----------------------------------------------------------
+
+///////////////////////////////////////////////////////////////////////////////////
+	// calculate-form
+
+		calculateForm.onsubmit = async (e) => {
+	
+			e.preventDefault();
+
+			let formData = new FormData(calculateForm);
+
+			let select = document.querySelectorAll('.select');
+
+			select.forEach(select => {
+				let selectValue = select.querySelector('.select__value');
+				let {placeholder} = selectValue.dataset;
+
+				if(placeholder !== selectValue.textContent) {
+					formData.append(select.id, selectValue.textContent);
+				} else {
+					formData.append(select.id, '');
+				}
+			});
+
+			let formError = false;
+
+			for(let [name, value] of formData) {
+				//console.log(`${name} = ${value}`); // перебор полей formData
+
+				if(!value) return false; 
+			}
+
+			console.log('response = await fetch');
+
+			// let response = await fetch('./back.php', {
+			// 	method: 'POST',
+			// 	body: formData
+			// });
+
+			// let result = await response.json();
+			// console.log(result);
+			
+		}
+
 	});
 })(jQuery);

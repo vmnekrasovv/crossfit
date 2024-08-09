@@ -238,6 +238,14 @@ select.input:invalid {
 
 }
 
+.input-ok {
+  border-color: #5d8300;
+}
+
+.input-error {
+  border-color: #833000;
+}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -303,23 +303,26 @@
           <div class="calculate-description">
             <p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Impedit voluptatum placeat, nesciunt debitis ab tempore dolorem officia dignissimos recusandae rem. Reiciendis blanditiis at fugiat ipsa sint atque in rerum qui?</p>
           </div>
-          <form class="calculate-form">
+          <form class="calculate-form" id="calculateForm">
             <div class="calculate-form-body">
               <input
                 class="calculate-input input"
                 id="height"
+                name="height"
                 type="number"
                 placeholder="Height / cm"
               />
               <input
                 class="calculate-input input"
                 id="weight"
+                name="weight"
                 type="number"
                 placeholder="Weight / kg"
               />
               <input
                 class="calculate-input input"
                 id="age"
+                name="age"
                 type="number"
                 placeholder="Age"
               />
@@ -327,7 +330,7 @@
               <div class="select input" id="select1">
                 <div class="select__backdrop" data-type="backdrop"></div>
                 <div class="select__input" data-type="input">
-                  <span class="select__value" data-type="value">Gender</span>
+                  <span class="select__value" data-type="value" data-placeholder="Gender">Gender</span>
                   <i data-type="arrow">></i>
                 </div>
                 <div class="select__dropdown">
@@ -341,7 +344,7 @@
               <div class="select input" id="select2">
                 <div class="select__backdrop" data-type="backdrop"></div>
                 <div class="select__input" data-type="input">
-                  <span class="select__value" data-type="value">Activity factor</span>
+                  <span class="select__value" data-type="value" data-placeholder="Activity">Activity</span>
                   <i data-type="arrow">></i>
                 </div>
                 <div class="select__dropdown">
@@ -357,6 +360,12 @@
                 type="submit">
                 Calculate
               </button>
+
+              <!-- <input
+                class="calculate-button button transparent"
+                type="submit"
+                value="Calculate"
+              /> -->
 
             </div>
            
