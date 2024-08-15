@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .button:hover {
   background-color: var(--color-highlight);
-  border-color: var(--color-highlight);
+  border-color: var(--color-border-light);
   cursor: pointer;
 }
 
@@ -197,7 +197,7 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--color-border-dark);
 
   &:hover {
-    border-color: var(--color-highlight);
+    border-color: var(--color-border-light);
   }
 }
 
