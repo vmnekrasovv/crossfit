@@ -6,7 +6,6 @@
 		z-index: 2;
 		
 		.select__dropdown { display: block; }
-		.select__backdrop { display: block; }
 	}
 
 	&__input {
@@ -80,17 +79,5 @@
 	    	border-bottom: none;
 	    }
 	}
-
-	&__backdrop {
-	    position: fixed;
-	    display: none;
-	    z-index: -1;
-	    top: 0;
-	    right: 0;
-	    left: 0;
-	    bottom: 0;
-	    background: transparent;
-	}
-
 
 }
